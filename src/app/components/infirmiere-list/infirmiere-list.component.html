@@ -1,16 +1,16 @@
 <div id="liste-infirmiere">
-    <p>Liste des infirmières :</p>
+    <h2>Liste des infirmières :</h2>
 
-    <p *ngFor="let infirmiere of infirmieres">
+    <div *ngFor="let infirmiere of infirmieres">
 
         <h3>Infirmière n°{{infirmiere.id}}</h3>
         N° pro : {{infirmiere.numeroProfessionnel}} <br/>
         Nom : {{infirmiere.nom}} <br/>
-        Prenom :
-        Téléphone pro :
-        Téléphone perso :
-        Adresse :
-        Patients :
-    </p>
+        Prenom : {{infirmiere.prenom}} <br/>
+        Téléphone pro : {{infirmiere.telPro}} <br/>
+        Téléphone perso : {{infirmiere.telPerso}} <br/>
+        Adresse : {{infirmiere.adresse}} <br/>
+        Patients : {{infirmiere.patients}} <br/>
+    </div>
 
 </div>

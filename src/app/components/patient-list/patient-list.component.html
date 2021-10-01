@@ -1,5 +1,17 @@
 <div id="liste-patient">
-    <p>Liste des patients :</p>
+    <h2>Liste des patients :</h2>
+
+    <div *ngFor="let patient of patients">
+
+        <h3>Patient n°{{patient.id}</h3>
+        Nom : {{patient.nom}} <br/>
+        Prenom : {{patient.prenom}} <br/>
+        Date de naissance : {{patient.dateDeNaissance}} <br/>
+        Sexe : {{patient.sexe}} <br/>
+        N° de sécurité sociale : {{patient.numeroSecuriteSociale}} <br/>
+        Adresse : {{patient.adresse}} <br/>
+        infirmiere : {{patient.infirmiere}} <br/>
+    </div>
 
 
 </div>
